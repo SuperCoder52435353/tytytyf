@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Sayt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎬 Random Video Sayt</h1>
+
+  <video id="videoPlayer" controls>
+    <source src="videos/sample-1080.mp4" type="video/mp4">
+    Brauzeringiz videoni qo'llab-quvvatlamaydi.
+  </video>
+
+  <div class="download-container">
+    <label for="quality">Yuklab olish sifati:</label>
+    <select id="quality">
+      <option value="720">720p</option>
+      <option value="1080" selected>1080p</option>
+      <option value="1440">1440p</option>
+      <option value="2k">2K</option>
+      <option value="4k">4K</option>
+      <option value="8k">8K</option>
+    </select>
+    <button onclick="downloadVideo()">⬇ Yuklab olish</button>
+    <p id="status"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
